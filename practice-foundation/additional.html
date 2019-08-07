@@ -11,127 +11,113 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header-page">
-        <nav class="nav-wrapper">
-            <div class="brand wrapper">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="brand">
                 <a href="#" class="brand__icon"><img src="images/Icon.png" alt="icon-brand"></a>
-                <div class="brand-name-description">
-                    <a href="#" class="brand__name --fw-bold">Foundation</a>
+                <div class="brand__wrapper">
+                    <a href="#" class="brand__wrapper__name text-link text-link--black--fs20">Foundation</a>
                     <p class="brand__description">Startup landing template</p>
                 </div>
             </div>
-            <div class="menu">
-                <ul class="list-menu">
-                    <li class="menu__item --fw-bold"><a href="#">Home</a></li>
-                    <li class="menu__item"><a href="#">Stories</a></li>
-                    <li class="menu__item dropdown">
-                        <a href="#">Library<i class="fas fa-angle-down fa-xs angle-down"></i></a>
-                        <ul class="wrapper wrap toggle">
-                            <li class="introduce">
-                                <a href="#">Acquire Users</a>
-                                <p class="description">Work with the tools and services you use.</p>
+            <ul class="menu">
+                    <li class="menu__item"><a class="text-link text-link--black--fs18" href="#">Home</a></li>
+                    <li class="menu__item"><a class="text-link text-link--black--fs18--fw-normal" href="#">Stories</a></li>
+                    <li class="menu__item menu__item--dropdown">
+                        <a class="text-link text-link--black--fs18--fw-normal" href="#">Library<img class="img-arrow" src="images/Arrow.png" alt="Arrow"></a>
+                        <ul class="toggle">
+                            <li class="toggle__item">
+                                <a class="toggle__item__link tittle tittle--fs22--lh28" href="#">Acquire Users</a>
+                                <p class="para para--fs20--lh26">Work with the tools and services you use.</p>
                             </li>
-                            <li class="introduce">
-                                <a href="#">Engage Customers</a>
-                                <p class="description">Get started with our simple snippet of JavaScript.</p>
+                            <li class="toggle__item">
+                                <a class="toggle__item__link tittle tittle--fs22--lh28" href="#">Engage Customers</a>
+                                <p class="para para--fs20--lh26">Get started with our simple snippet of JavaScript.</p>
                             </li>
-                            <li class="introduce">
-                                <a href="#">Book Appointments</a>
-                                <p class="description">We offer measures like 2FA to ensure the safety.</p>
+                            <li class="toggle__item">
+                                <a class="toggle__item__link tittle tittle--fs22--lh28" href="#">Book Appointments</a>
+                                <p class="para para--fs20--lh26">We offer measures like 2FA to ensure the safety.</p>
                             </li>
-                            <li class="introduce">
-                                <a href="#">Generate Leads</a>
-                                <p class="description">Become a better designer by learning this courses.</p>
+                            <li class="toggle__item">
+                                <a class="toggle__item__link tittle tittle--fs22--lh28" href="#">Generate Leads</a>
+                                <p class="para para--fs20--lh26">Become a better designer by learning this courses.</p>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <button class="btn btn-primary --fw-bold">Get Started</button>
-            </div>
+            <button class="header__nav__button btn btn-primary --fw-bold">Get Started</button>
         </nav>
-        <div class="banner">
-            <h1 class="tittle --fw-bold">A bill that's fair and flexible</h1>
-            <div class="banner-left">
-                <p class="description">Create live segments and target the right people for messages based on their behaviors.</p>
-                <div class="group-btn">
-                    <button class="btn btn-primary --fw-bold">Get Started</button>
-                    <button class="btn btn-default --fw-bold">Learn More</button>
+        <div class="header__banner">
+            <div class="header__banner__left">
+                <p class="header__banner__para para">Create live segments and target the right people for messages based on their behaviors.</p>
+                <div class="group-button">
+                 <button class="header__banner__btn btn">Get Started</button><button class="header__banner__btn btn btn--text-blue--bg-white">Learn More</button>
                 </div>
             </div>
-            <img src="images/ouch.jpg" alt="ouch">
+            <img class="header__banner__img" src="images/ouch.jpg" alt="ouch">         
+            <h1 class="header__banner__tittle tittle">A bill that’s fair and flexible</h1>
         </div>
     </header>
-    <section class="section1">
-        <div class="section1-header">
-            <div class="benefit">
-                <img src="images/ouch1.png" alt="ouch1">
-                <p class="benefit-description">Software development tool used by teams.</p>
-                <a href="#" class="hyper-link">Learn More</a>
-            </div>
-            <div class="benefit">
-                <img src="images/ouch2.png" alt="ouch2">
-                <p class="benefit-description">Collaborate on code and manage your Git repositories.</p>
-                <a href="#" class="hyper-link">See Features</a>
-            </div>
-            <div class="benefit">
-                <img src="images/ouch3.png" alt="ouch3">
-                <p class="benefit-description">Organize your work in one place.</p>
-                <a href="#" class="hyper-link">Open a Ticket</a>
-            </div>
+    <div class="features card-features">
+        <div class="features__item card-features__item">
+            <img class="card-features__img" src="images/ouch1.png" alt="ouch1">
+            <p class="card-features__item__para para para--lh30">Software development tool used by teams.</p>
+            <a href="#" class="features__item__link text-link">Learn More</a>
         </div>
-        <h2 class="section1-tittle">Understand your audience</h2>
-        <p class="endow">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
-        <ul class="list-course">
-            <li class="course">
-                <img src="images/icon1.png" alt="search-icon">
-                <div class="course-content">
-                    <h3 class="course-name">Search Index</h3>
-                    <p class="course-description">Foundation works with the tools and services you already use every day.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </li>
-            <li class="course">
-                <img src="images/icon2.png" alt="search-icon">
-                <div class="course-content">
-                    <h3 class="course-name">Translation</h3>
-                    <p class="course-description">Foundation works with the tools and services you already use every day.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </li>
-            <li class="course">
-                <img src="images/icon3.png" alt="search-icon">
-                <div class="course-content">
-                    <h3 class="course-name">Subscriptions</h3>
-                    <p class="course-description">Foundation works with the tools and services you already use every day.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </li>
-            <li class="course">
-                <img src="images/icon4.png" alt="search-icon">
-                <div class="course-content">
-                    <h3 class="course-name">Unlimited Calls</h3>
-                    <p class="course-description">Foundation works with the tools and services you already use every day.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </li>
-            <li class="course">
-                <img src="images/icon5.png" alt="search-icon">
-                <div class="course-content">
-                    <h3 class="course-name">Cloud Printing</h3>
-                    <p class="course-description">Foundation works with the tools and services you already use every day.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </li>
-            <li class="course">
-                <img src="images/icon6.png" alt="search-icon">
-                <div class="course-content">
-                    <h3 class="course-name">Wireless Control</h3>
-                    <p class="course-description">Become an indispensable item of everyday's life.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </li>          
-        </ul>
-        <div class="section1-footer">
+        <div class="features__item card-features__item">
+            <img class="card-features__img" src="images/ouch2.png" alt="ouch2">
+            <p class="card-features__item__para para para--lh30">Collaborate on code and manage your Git repositories.</p>
+            <a href="#" class="features__item__link text-link">See Features</a>
+        </div>
+        <div class="features__item card-features__item">
+            <img class="card-features__img" src="images/ouch3.png" alt="ouch2">
+            <p class="card-features__item__para para para--lh30">Organize your work in one place.</p>
+            <a href="#" class="features__item__link text-link">Open a Ticket</a>
+        </div>
+    </div>
+    <div class="wrapper tittle-para">
+        <h2 class="tittle tittle--fs56--lh56">Understand your audience</h2>
+        <p class="tittle-para__para para">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
+    </div>
+    <ul class="features list-courses">
+        <li class="features__item course">
+            <img class="course__img" src="images/icon1.png" alt="search-icon">
+            <h3 class="tittle tittle--fs20--lh26">Search Index</h3>
+            <p class="para para--fs20--lh26 course__para">Foundation works with the tools and services you already use every day.</p>
+            <a class="features__item__link text-link" href="#">Learn more</a>
+        </li>
+        <li class="features__item course">
+            <img class="course__img" src="images/icon2.png" alt="search-icon">
+            <h3 class="tittle tittle--fs20--lh26">Translation</h3>
+            <p class="para para--fs20--lh26 course__para">Foundation works with the tools and services you already use every day.</p>
+            <a class="features__item__link text-link" href="#">Learn more</a>
+        </li>
+        <li class="features__item course">
+            <img class="course__img" src="images/icon3.png" alt="search-icon">
+            <h3 class="tittle tittle--fs20--lh26">Subscriptions</h3>
+            <p class="para para--fs20--lh26 course__para">Foundation works with the tools and services you already use every day.</p>
+            <a class="features__item__link text-link" href="#">Learn more</a>
+        </li>
+        <li class="features__item course">
+            <img class="course__img" src="images/icon4.png" alt="search-icon">
+            <h3 class="tittle tittle--fs20--lh26">Unlimited Calls</h3>
+            <p class="para para--fs20--lh26 course__para">Foundation works with the tools and services you already use every day.</p>
+            <a class="features__item__link text-link" href="#">Learn more</a>
+        </li>
+        <li class="features__item course">
+            <img class="course__img" src="images/icon5.png" alt="search-icon">
+            <h3 class="tittle tittle--fs20--lh26">Cloud Printing</h3>
+            <p class="para para--fs20--lh26 course__para">Foundation works with the tools and services you already use every day.</p>
+            <a class="features__item__link text-link" href="#">Learn more</a>
+        </li>
+        <li class="features__item course">
+            <img class="course__img" src="images/icon6.png" alt="search-icon">
+            <h3 class="tittle tittle--fs20--lh26">Wireless Control</h3>
+            <p class="para para--fs20--lh26 course__para">Become an indispensable item of everyday's life.</p>
+            <a class="features__item__link text-link" href="#">Learn more</a>
+        </li>          
+    </ul>
+        <div class="review">
             <div class="list-logo">
                 <img src="images/logo-1.png" alt="logo AppleWorld">
                 <img src="images/logo-2.png" alt="logo HoustonChronicle">
@@ -140,131 +126,125 @@
                 <img src="images/logo-5.png" alt="logo Digital Trends">
                 <img src="images/logo-6.png" alt="logo Cult Of Mac">
             </div>
-            <h2 class="section1-footer-tittle --fw-bold">Trusted by the world’s most innovative businesses – big and small</h2>
-            <p class="advertisement">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
-            <div class="editor">
-                <h4 class="editor-name --fw-bold">Viella Malkovich</h4>
-                <p class="editor-describe">Creative Director at Johnson</p>
+            <h2 class="review__link text-link text-link--fs24--lh30">Trusted by the world’s most innovative businesses – big and small</h2>
+            <p class="review__para para">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+            <div class="review__editor">
+                <h4 class="tittle tittle--fs16--lh24">Viella Malkovich</h4>
+                <p class="review__editor__para">Creative Director at Johnson</p>
             </div>
-            <div class="list-dots">
-                <i class="fas fa-circle fa-xs active"></i>
-                <i class="fas fa-circle fa-xs"></i>
-                <i class="fas fa-circle fa-xs"></i>
+            <div class="review__dots">
+                <img class="review__dots__img" src="images/dot-selected.png" alt="dot-selected">
+                <img class="review__dots__img" src="images/dot.png" alt="dot">
+                <img class="review__dots__img" src="images/dot.png" alt="dot">
             </div>
-            <img class="img-footer-section1" src="images/img-footer-section1.png" alt="img footer">
+            <img class="review__img" src="images/img-footer-section1.png" alt="img footer">
         </div>
-    </section>
-    <section class="section2">
-        <div class="section2-content">
-            <div class="section2-header-top">
-                <div class="section2-header-top-left">
-                    <p class="communicate">Communicate Better</p>
-                    <h2 class="tittle">Millions of Wi-Fi hotspots</h2>
-                    <p class="describe">Three products that can be used independently or combined together for your company’s needs.</p>
-                    <button class="btn btn-primary --fw-bold">Get Started</button>
+        <div class="block-features">
+            <div class="wrapper-nowrap block-features__above">
+                <div class="features-item block-features__above__left">
+                    <p class="block-features__above__better">Communicate Better</p>
+                    <h2 class="tittle tittle--fs56--lh56">Millions of Wi-Fi hotspots</h2>
+                    <p class="block-features__above__para para">Three products that can be used independently or combined together for your company’s needs.</p>
+                    <button class="btn">Get Started</button>
                 </div>
-                <div class="section2-header-top-right">
+                <div class="block-features__above__right">
                     <img src="images/face.png" alt="face">
                     <p>A better way to acquire new users</p>
                 </div>
             </div>
-            <div class="section2-line"></div>
-            <div class="section2-content-3features">
-                <div class="features-item">
-                    <h3 class="tittle">Firmware Updates.</h3>
-                    <p> Foundation works with the tools and services you already use every day.</p>
-                    <a href="#" class="hyper-link">View changelog</a>
+            <div class="short-line"></div>
+            <div class="wrapper block-features__below">
+                <div class="features-item block-features__below__item">
+                    <p class="block-features__below__item__para"><b class="tittle--inline">Firmware Updates.</b> Foundation works with the tools and services you already use every day.</p>
+                    <a href="#" class="text-link">View changelog</a>
                 </div>
-                <div class="features-item">
-                    <h3 class="tittle">Unlimited Traffic.</h3>
-                    <p> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.</p>
-                    <a href="#" class="hyper-link">Bandwith</a>
+                <div class="features-item block-features__below__item">
+                    <p class="block-features__below__item__para"><b class="tittle--inline">Unlimited Traffic.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.</p>
+                    <a href="#" class="text-link">Bandwith</a>
                 </div>
-                <div class="features-item">
-                    <h3 class="tittle">Responsive Design.</h3>
-                    <p> We offer measures like 2FA and SSO to ensure the safety of your data.</p>
-                    <a href="#" class="hyper-link">Design resources</a>
+                <div class="features-item block-features__below__item">
+                    <p class="block-features__below__item__para"><b class="tittle--inline">Responsive Design.</b> We offer measures like 2FA and SSO to ensure the safety of your data.</p>
+                    <a href="#" class="text-link">Design resources</a>
                 </div>
             </div>
-            <h2 class="text-full-line">Trusted by the world’s most innovative businesses – big and small</h2>
-            <div class="section2-content-2features">
-                <div class="feature">
-                    <img src="images/ongnhom.png" alt="ongnhom">
-                    <div class="feature-content">
-                        <h3 class="titte">Email Marketing</h3>
-                        <p>Foundation works with the tools and services you already use every day.</p>
-                        <a href="#" class="hyper-link">View materials</a>
+            <h2 class="block-features__tittle-full-line text-link text-link--fs24--lh30" style="color: #000000">Trusted by the world’s most innovative businesses – big and small</h2>
+            <div class="wrapper list-cards">
+                <div class="list-cards__card">
+                    <img class="list-cards__card__img" src="images/ongnhom.png" alt="ongnhom">
+                    <div class="card__content features-item block-features__below__item">
+                        <h3 class="card__tittle">Email Marketing</h5>
+                        <p class="block-features__below__item__para">Foundation works with the tools and services you already use every day.</p>
+                        <a href="#" class="text-link">View materials</a>
                     </div>
                 </div>
-                <div class="feature">
-                    <img src="images/trom.png" alt="trom">
-                    <div class="feature-content">
-                        <h3 class="titte">Software Development</h3>
-                        <p>Foundation works with the tools and services you already use every day.</p>
-                        <a href="#" class="hyper-link">Learn more</a>
+                <div class="list-cards__card">
+                    <img class="list-cards__card__img" src="images/trom.png" alt="ongnhom">
+                    <div class="card__content features-item block-features__below__item">
+                        <h3 class="card__tittle">Software Development</h5>
+                        <p class="block-features__below__item__para">Foundation works with the tools and services you already use every day.</p>
+                        <a href="#" class="text-link">Learn more</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="footer-page">
-        <div class="footer-page-banner">
-            <img src="images/fox.png" alt="fox">
-            <div class="free-trial">
-                <h2 class="tittle">Start your free trial.</h2>
-                <p class="description">Get notified about company updates, news and blog posts. We hate spam.</p>
-                <form action="#">
-                    <input type="text" placeholder="Enter your email">
+        <div class="wrapper-nowrap free-trial">
+            <img class="free-trial__img" src="images/fox.png" alt="fox">
+            <div class="free-trial__content">
+                <h2 class="tittle tittle--fs40--lh40">Start your free trial.</h2>
+                <p class="free-trial__content__para para para--fs22--lh32">Get notified about company updates, news and blog posts. We hate spam.</p>
+                <form action="#" class="free-trial__form">
+                    <input class="free-trial__input" type="text" placeholder="Enter your email">
                     <button class="btn btn-primary --fw-bold">Get Started</button>
-                    <p class="info-setup">Free 14-day trial · Easy setup · Cancel any time. Check out Terms of Use.</p>
                 </form>
+                <p class="free-trial__content__description para--opacity">Free 14-day trial · Easy setup · Cancel any time. Check out Terms of Use.</p>
             </div>
         </div>
-        <div class="footer-page-content">
-            <div class="footer-page-content-foundation">
-                <div class="brand wrapper">
-                    <a href="#" class="brand__icon"><img src="images/icon-footer.png" alt="icon-brand"></a>
-                    <div class="brand-name-description">
-                        <a href="#" class="brand__name --fw-bold">Foundation</a>
-                        <p class="brand__description">Startup landing template</p>
+        <footer class="footer">
+            <div class="footer__row1">
+                <div class="footer__row1__brand block-features__below__item">
+                    <div class="brand">
+                        <a href="#" class="footer__brand__icon brand__icon"><img src="images/icon-footer.png" alt="icon-brand"></a>
+                        <div class="brand__wrapper">
+                            <a href="#" class="brand__wrapper__name text-link text-link--black--fs20">Foundation</a>
+                            <p class="brand__description">Startup landing template</p>
+                        </div>
                     </div>
+                    <p class="footer__row1__brand__para para--opacity para--opacity--fs18--26">Foundation is a website template for startups and small teams. It helps to build a website in no time.</p>
+                    <img class="footer__row1__brand__img" src="images/AppStore.png" alt="app store">
+                    <img src="images/GooglePlay.png" alt="GooglePlay">
                 </div>
-                <p class="description">Foundation is a website template for startups and small teams. It helps to build a website in no time.</p>
-                <img src="images/AppStore.png" alt="app store">
-                <img src="images/GooglePlay.png" alt="GooglePlay">
-            </div>
-            <div class="list-product-company">
-                <h3 class="footer-page-content-tittle">Product</h3>
-                <ul>
-                    <li>Acquire Users</li>
-                    <li>Content Marketing</li>
-                    <li>Website Templates</li>
-                    <li>Customer Management</li>
-                    <li>Virtual Inbox</li>
-                </ul>
-            </div>
-            <div class="list-product-company">
-                <h3 class="footer-page-content-tittle">Company</h3>
-                <ul>
-                    <li>About Foundation</li>
-                    <li>Brand Guidelines</li>
-                    <li>Press Kitt</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-            <div class="footer-row-end">
-                <div class="left">
-                    <h5>Terms</h5>
-                    <h5>Privacy</h5>
-                    <h5>License</h5>
+                <div class="footer__row1__list">
+                    <h3 class="tittle tittle--fs22--lh28">Product</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Acquire Users</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Content Marketing</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Website Templates</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Customer Management</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Virtual Inbox</li>
+                    </ul>
                 </div>
-                <div class="right">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                <div class="footer__row1__list">
+                    <h3 class="tittle tittle--fs22--lh28">Company</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">About Foundation</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Brand Guidelines</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Press Kit</li>
+                        <li class="footer__list__item para--opacity para--opacity--fs18--26">Support</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer__row2">
+                <div class="footer__row2__item">
+                    <a class="footer__row2__link para--opacity">Terms</a>
+                    <a class="footer__row2__link para--opacity">Privacy</a>
+                    <a class="footer__row2__link para--opacity">License</a>
+                </div>
+                <div class="footer__row2__item">
+                    <a href="#" class="footer__row2__link"><img src="images/icon-twitter.png" alt="twitter"></a>
+                    <a href="#" class="footer__row2__link"><img src="images/icon-fb.png" alt="facebook"></a>
+                    <a href="#" class="footer__row2__link"><img src="images/LinkedIn.png" alt="linkedIn"></a>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
