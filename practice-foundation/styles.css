@@ -3,6 +3,10 @@
 * {
   font-family: Worksans, sans-serif !important;
 }
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
 .text-link{
   text-decoration: none;
   color: #3041C4;
@@ -163,12 +167,13 @@
   border-radius: 14px;
 }
 .brand__wrapper__name{
+  font-size: 20px;
   display: block;
-  margin-bottom: 5.2px;
+  margin-bottom: 4.3px;
 }
 .brand__description{
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 4.3px;
   opacity: 0.6;
 }
 .para{
@@ -205,16 +210,17 @@
   width: 754px;
   position: absolute;
   top: -24px;
+  left: -4px;
   z-index: 1;
 }
 .header__banner__left{
   margin-top: 175px;
 }
 .header__banner__para{
-  margin-bottom: 58px;
+  margin-bottom: 60px;
 }
 .header__banner__btn{
-  margin: 5px;
+  margin-right: 10px;
 }
 .features{
   display: flex;
@@ -222,7 +228,7 @@
   margin: auto;
 }
 .card-features{
-  width: 1073px;
+  justify-content: center;
   margin-bottom: 87px;
 }
 .features__item{
@@ -231,7 +237,7 @@
   align-items: center;
 }
 .card-features__item{
-  margin: 7.3px;
+  margin: 0 23px;
   box-sizing: border-box;
   text-align: center;
   width: 343px;
@@ -242,7 +248,7 @@
   box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
-.card-features__item__img{
+.card-features__img{
   height: 150px;
   margin-bottom: 36px;
 }
@@ -260,7 +266,7 @@
   margin: auto;
   text-align: center;
   width: 555px;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 .tittle-para__para{
   margin-top: 30px;
@@ -269,11 +275,13 @@
   font-weight: bold;
 }
 .list-courses{
-  justify-content: center;
+  margin: 0 0 44px 129px;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .course{
   width: 360px;
-  margin: 39px 15px;
+  margin:0 30px 70px 0;
   align-items: flex-start;
 }
 .course__img{
@@ -286,9 +294,8 @@
   margin-top: auto;
 }
 .review{
-  margin-top: 114px;
   background-color: rgba(211,233,239,0.3);
-  padding: 50px 131px 80px;
+  padding: 37px 131px 82px 129px;
   text-align: center;
   position: relative;
 }
@@ -305,6 +312,7 @@
   width: 70%;
 }
 .review__editor__para{
+  margin: 4px 0 38px;
   opacity: 0.6;
 }
 .review__img{
@@ -317,13 +325,16 @@
   margin: 0 7.5px;
 }
 .block-features{
-  padding: 81px 130px 114px 126px;
+  padding: 81px 130px 114px 130px;
 }
 .block-features__above{
   justify-content: space-between;
 }
 .block-features__above__left{
   width: 462px;
+}
+.block-features__above__tittle{
+  margin-left: -4px;
 }
 .block-features__above__better{
   margin: 50px 0 24px 0;
@@ -340,6 +351,9 @@
   margin-right: 64px;
   text-align: center;
 }
+.block-features__img{
+  margin-bottom: 15px;
+}
 .short-line{
   margin: 68px 0 41px;
   width: 150px;
@@ -347,21 +361,25 @@
   background-color: #000000;
   opacity: 0.1;
 }
+.block-features__below .block-features__below__item:nth-child(n):not(:nth-last-child(1)):not(:nth-child(1)){
+  margin: 0 30px;
+}
 .block-features__below__item{
   width: 360px;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 26px;
 }
-.block-features__below__item{
-  margin: 0 8px;
-}
 .block-features__below__item__para{
-  margin-bottom: 12.6px;
+  margin-bottom: 6px;
+}
+.block-features__below__item__link{
+  display: block;
+  margin: 5px 0 7.6px 0;
 }
 .block-features__tittle-full-line{
   text-align: center;
-  margin: 96px 0 33px 0;
+  margin: 93px 0 33px 0;
 }
 .list-cards{
   justify-content: space-between;
@@ -384,19 +402,21 @@
 }
 .card__tittle{
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .free-trial{
   background: #F4F5F7;
   padding: 73px 0 72px;
-  justify-content: space-evenly;
   align-items: center;
+}
+.free-trial__img{
+  margin: 0 122px 0 224px;
 }
 .free-trial__content{
   width: 555px;
 }
 .free-trial__content__para{
-  margin: 12px 0 26px;
+  margin: 22px 0 26px;
 }
 .free-trial__input{
   box-sizing: border-box;
@@ -411,7 +431,7 @@
   margin-top: 10px;
 }
 .footer__row1{
-  padding: 43px 0 47px 129px;
+  padding: 41px 0 47px 129px;
   display: flex;
   align-items: flex-start;
 }
@@ -420,6 +440,7 @@
 }
 .footer__row1__brand{
   margin: 0 126px 0 0;
+  line-height: 18px;
 }
 .footer__row1__brand__para{
   margin: 30px 0 25px;
